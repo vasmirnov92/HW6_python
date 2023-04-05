@@ -6,3 +6,23 @@
 
 # Ввод: 7 2 5
 # Вывод: 7 9 11 13 15
+
+print('Введите первый элемент прогрессии: ')
+a = input()
+a = int(a)
+
+print('Введите шаг прогрессии: ')
+b = input()
+b = int(b)
+
+print('Введите количество членов прогрессии: ')
+c = input()
+c = int(c)
+
+list = []
+
+for i in range(c):
+    list.append(a)
+    a = a+b
+
+print(list)
